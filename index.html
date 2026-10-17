@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f5f1" />
+    <meta name="description" content="Practice business course questions one at a time, track your progress, and review questions to revisit." />
+    <title>Study Hall — Course Practice</title>
+    <link rel="stylesheet" href="styles.css?v=theme-20261018" />
+    <script defer src="fixed-answer-checking.js?v=theme-20261018"></script>
+    <script defer src="app.js?v=theme-20261018"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" data-action="home" aria-label="Study Hall home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span>study<span class="brand-light">hall</span></span>
+        </a>
+        <div class="topbar-right">
+          <span class="local-chip"><span class="status-dot"></span> Progress saved on this device</span>
+          <button class="icon-button" type="button" data-action="theme" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode"><span id="theme-icon" aria-hidden="true">☾</span></button>
+        </div>
+      </header>
+      <main id="app" tabindex="-1">
+        <div class="loading-state"><div class="loader"></div><p>Getting your courses ready…</p></div>
+      </main>
+      <footer class="site-footer">
+        <span>Built for steady progress.</span>
+        <span>Practice data stays in this browser.</span>
+      </footer>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
